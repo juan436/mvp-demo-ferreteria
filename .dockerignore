@@ -19,3 +19,19 @@ out
 Thumbs.db
 # Backend workspace (ignored)
 nest-backend/
+
+.npmrc
+**/.npmrc
+.ssh
+**/.ssh
+.aws
+**/.aws
+id_rsa
+id_ed25519
+*.pem
+*.key
+*.crt
+*.cer
+*.csr
+*.pfx
+*.p12
