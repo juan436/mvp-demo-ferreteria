@@ -34,8 +34,7 @@ RUN sha256sum pnpm-lock.yaml > /tmp/lockfile.sha256 && \
 RUN --mount=type=cache,id=pnpm,target=/pnpm-store \
     pnpm fetch && \
     pnpm install --frozen-lockfile --ignore-scripts && \
-    pnpm store prune && \
-    rm -rf /pnpm-store
+    pnpm store prune
 
 # ---------- Builder ----------
 FROM base AS builder
