@@ -84,6 +84,7 @@ WORKDIR /app
 # Variables de entorno de producción
 ENV NODE_ENV=production \
     PORT=3000 \
+    HOSTNAME=0.0.0.0 \
     NEXT_TELEMETRY_DISABLED=1
 
 # Crear usuario no-root sin shell
