@@ -76,6 +76,18 @@ export function LoginForm({ onSuccess }: LoginFormProps) {
         <CardDescription>Ingresa tus credenciales para acceder al sistema</CardDescription>
       </CardHeader>
       <CardContent>
+        <div className="mb-4 rounded-md border border-amber-300 bg-amber-50 px-3 py-2.5 text-sm text-amber-900">
+          <p className="font-medium">Demo — usa estas credenciales de administrador de prueba para ingresar:</p>
+          <p className="mt-1 font-mono text-xs">admin@ferreteria.com &nbsp;/&nbsp; admin123</p>
+          <button
+            type="button"
+            onClick={() => setCredentials({ email: "admin@ferreteria.com", password: "admin123" })}
+            className="mt-2 text-xs font-medium text-amber-800 underline underline-offset-2 hover:text-amber-950"
+          >
+            Rellenar automáticamente
+          </button>
+        </div>
+
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
             <Label htmlFor="email">Correo electrónico</Label>
